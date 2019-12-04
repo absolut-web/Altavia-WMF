@@ -184,6 +184,10 @@
     cursor: pointer;
 }
 
+.promo-filter__button--active {
+    font-weight: bold;
+}
+
 .html-content .promo-material {
     display: flex;
     align-items: stretch;
@@ -205,8 +209,27 @@
     }
 }
 
-.promo-material__image-box {
-    background: #e6e6e6;
+.promo-material__link {
+
 }
 
+.promo-material__image-box {
+    background: #e6e6e6;
+    overflow: hidden;
+}
+
+.promo-material__image {
+    transition: all ease-in-out 0.3s;
+}
+
+.promo-material__title {
+    margin: 10px auto 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.promo-material__link:hover .promo-material__image {
+    opacity: 0.7;
+    transform: translate(0, 2%);
+}
 
