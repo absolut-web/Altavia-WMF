@@ -18,6 +18,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #000;
+    overflow-x: hidden;
 }
 
 .html-content img {
@@ -87,7 +88,7 @@
 .banner__item {
     position: relative;
     margin: 0 10px 20px 10px;
-    background: black;
+    background: #000000;
     overflow: hidden;
 }
 
@@ -149,4 +150,63 @@
 
 
 /* Promotion */
+.html-content .promo-description {
+    margin: 20px auto;
+}
+
+.html-content .promo-menu {
+    display: flex;
+    margin: 20px auto;
+}
+
+.html-content .promo-filter {
+    margin: 0;
+    padding: 0;
+}
+
+.promo-filter__item {
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.promo-filter__button {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.html-content .promo-material {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+.promo-material__item {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    .promo-material__item {
+        width: calc(33.3333% - 20px);
+    }
+}
+
+.promo-material__image-box {
+    background: #e6e6e6;
+}
+
 
