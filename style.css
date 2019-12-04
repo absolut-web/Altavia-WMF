@@ -15,7 +15,9 @@
 .html-content {
     max-width: 1200px;
     margin: auto;
-    background: aliceblue;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
 }
 
 .html-content img {
@@ -24,6 +26,20 @@
     box-sizing: content-box;
     vertical-align: middle;
 }
+
+.visually-hidden:not(:focus):not(:active):not(.visually-hidden--show) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* Typography */
 .html-content a {
@@ -35,10 +51,13 @@
     padding: 0;
 }
 
-.banner {
+
+/* Home */
+.html-content .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -48,17 +67,28 @@
 }
 
 .banner--2-cols .banner__item {
-    width: 50%;
+    width: 100%;
 }
 
 .banner--3-cols .banner__item {
-    width: 33.3333%;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .banner--2-cols .banner__item {
+        width: calc(50% - 20px);
+    }
+
+    .banner--3-cols .banner__item {
+        width: calc(33.3333% - 20px);
+    }
 }
 
 .banner__item {
     position: relative;
     margin: 0 10px 20px 10px;
     background: black;
+    overflow: hidden;
 }
 
 .banner__link {
@@ -69,11 +99,24 @@
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -65%);
+    font-size: 26px;
+    line-height: 1.2;
     text-align: center;
-    z-index: 2;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
 }
 
+.banner__image {
+    width: 100%;
+    object-fit: cover;
+    transition: opacity ease-in-out 0.3s;
+}
 
 
 .banner__item--text {
@@ -81,14 +124,29 @@
     min-height: 340px;
     margin: auto;
     padding: 60px 15%;
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
 }
 
+.banner__link:hover .banner__title {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 2;
+}
+
+.banner__link:hover .banner__image {
+    opacity: 0.3;
+}
 
 .banner--parallax {
-    background: url("images/parallax-bg.jpg") no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
+
+
+/* Promotion */
+
