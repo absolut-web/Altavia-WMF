@@ -1,0 +1,100 @@
+/* WMFRotis Bold*/
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: bold;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-Bold.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-Bold'), local('WMFRotis-Bold'),
+    url('fonts/WMFRotis-Bold.woff') format('woff')
+}
+
+/* WMFRotis-Italic */
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-Italic.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-Italic'), local('WMFRotis-Italic'),
+    url('fonts/WMFRotis-Italic.woff') format('woff')
+}
+
+/* WMFRotis-Light */
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: light;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-Light.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-Light'), local('WMFRotis-Light'),
+    url('fonts/WMFRotis-Light.woff') format('woff')
+}
+
+/* WMFRotis-LightItalic */
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: lightitalic;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-LightItalic.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-LightItalic'), local('WMFRotis-LightItalic'),
+    url('fonts/WMFRotis-LightItalic.woff') format('woff')
+}
+
+/* WMFRotis-Medium */
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: medium;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-Medium.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-Medium'), local('WMFRotis-Medium'),
+    url('fonts/WMFRotis-Medium.woff') format('woff')
+}
+
+/* WMFRotis-Regular */
+@font-face {
+    font-family: 'WMFRotis';
+    font-style: regular;
+    font-weight: 400;
+    src: url('fonts/WMFRotis-Regular.otf'); /* IE9 Compat Modes */
+    src: local('WMFRotis-Regular'), local('WMFRotis-Regular'),
+    url('fonts/WMFRotis-Regular.woff') format('woff')
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    font-family: 'WMFRotis', sans-serif; /* 400 700 italic */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background: #ffffff;
+}
+
+a {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover, a:focus, a:active {
+    color: inherit;
+}
+
+a:focus,
+button:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+

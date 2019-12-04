@@ -1,0 +1,94 @@
+@import 'reset.css';
+/* Reset */
+.html-content {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.html-content *,
+.html-content ::after,
+.html-content ::before {
+    box-sizing: inherit;
+}
+
+
+.html-content {
+    max-width: 1200px;
+    margin: auto;
+    background: aliceblue;
+}
+
+.html-content img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
+/* Typography */
+.html-content a {
+    text-decoration: none;
+}
+
+.html-content p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.banner--full {
+    margin: auto;
+}
+
+.banner--2-cols .banner__item {
+    width: 50%;
+}
+
+.banner--3-cols .banner__item {
+    width: 33.3333%;
+}
+
+.banner__item {
+    position: relative;
+    margin: 0 10px 20px 10px;
+    background: black;
+}
+
+.banner__link {
+}
+
+.banner__title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+.banner__item--text {
+    width: 100%;
+    min-height: 340px;
+    margin: auto;
+    padding: 60px 15%;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.banner--parallax {
+    background: url("images/parallax-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
